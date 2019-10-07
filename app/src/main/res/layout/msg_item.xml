@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/right_image"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true" />
+    <RelativeLayout
+        android:layout_toLeftOf="@id/right_image"
+        android:id="@+id/right_layout"
+        android:background="@drawable/bg_left"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        >
+
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hello"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_toRightOf="@id/image_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/bg_right">
+
+        <TextView
+            android:id="@+id/left_mag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hello"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_left"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>
